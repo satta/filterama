@@ -9,7 +9,7 @@ function filter(gn)
   gfi = gt.feature_node_iterator_new(gn)
   node = gfi:next()
   while node ~= nil do
-    if (node:get_type() == "gene") then
+    if (node:get_type() == "CDS") then
       return false
     end
     node = gfi:next()
